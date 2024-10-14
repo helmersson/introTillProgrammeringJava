@@ -1,19 +1,16 @@
 package oop;
 
 public class fruit {
-
-    //skapa ett attribut
-    //typ attributName;
-    //int number;
+    private String name;
     private String color;
 
-    //skapa konstruktor
-    //public className() {}
-    public fruit(String myColor) {
-        color = "myColor";
+
+    public fruit(String name, String color) {
+        this.name = name;
+        this.color = color;
     }
 
-    //definera attributet i konstruktorn
-
-
+    public void printColor() {
+        System.out.println(name + " is " + color + ".");
+    }
 }

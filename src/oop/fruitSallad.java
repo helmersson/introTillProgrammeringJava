@@ -2,12 +2,13 @@ package oop;
 
 public class fruitSallad {
     public static void main(String[] args) {
+        fruit banana = new fruit("banana", "yellow");
+        fruit apple = new fruit("apple", "red");
+        fruit plum = new fruit("plum", "purple");
 
-        fruit banana = new fruit("Yellow");
-
-        fruit apple = new fruit("Red");
-
-        fruit plume = new fruit("Purple");
+        banana.printColor();
+        apple.printColor();
+        plum.printColor();
 
     }
 }
