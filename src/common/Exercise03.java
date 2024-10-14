@@ -28,7 +28,7 @@ public class Exercise03 {
         scanner.close();
     }
 }
-/*
+/* 0
  Skapa ett program som läser in antal timmar, beräknar och skriver ut hur mycket det
 blir omvandlat till minuter resp sekunder.
  */
