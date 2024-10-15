@@ -16,5 +16,4 @@ public class InputOutput {
         logic.printResult();
     }
 
-
 }
