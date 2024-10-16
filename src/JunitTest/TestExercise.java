@@ -9,7 +9,7 @@ public class TestExercise {
 
         String text = "Some text";
         int actual = text.length();
-        int expected = 7;
+        int expected = 6;
 
         assertEquals(expected, actual);
     }
