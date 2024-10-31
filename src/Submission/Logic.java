@@ -1,22 +1,27 @@
 package Submission;
 
-
 public class Logic {
-    //Init på olika variablar som behövs
+    //Init på de olika variablar som behövs
     private int charCount = 0;
     private int lineCount = 0;
     private int  wordCount = 0;
     private String longestWord = "";
 
     //  Uppdaterar variablarna efter varje input
-        public void addLine(String line) {
+        public boolean addLine(String line) {
+
+            if (line.equalsIgnoreCase("stop")) {
+                return true; // Avsluta om användaren skriver "stop"
+            }
+            //  Ökar linecount för varje gång addLine körs
+            //  charCount = längden på line
             lineCount++;
             charCount+= line.length();
 
-            //  Delar upp orden med hjälp med mellanslag
+            //  words = array som sparar varje inviduellt ord i en rad
+            // wordCount = antalet ord. words.length går igenom arrayen
             String [] words = line.split("\\s+");
             wordCount += words.length;
-
 
             //  Om det nya order är längre än det sparade längsta ordet
             //  så uppdateras längsta ordet till senaste ordet
@@ -25,8 +30,9 @@ public class Logic {
                     longestWord = word;
                 }
             }
+            return false;
         }
-        //  Printar ut svaren i commadprompten
+        //  Printar ut svaren i konsolen
         public void printResult(){
             System.out.println("Antal rader:" + lineCount);
             System.out.println("Antal tecken:" + charCount);
@@ -34,5 +40,21 @@ public class Logic {
             System.out.println("Längsta ord:" + longestWord);
         }
 
+        // Get metoder för att returnera variablarna för test
+    public int getCharCount() {
+        return charCount;
+    }
+
+    public int getLineCount() {
+        return lineCount;
+    }
+
+    public int getWordCount() {
+        return wordCount;
+    }
+
+    public String getLongestWord() {
+        return longestWord;
+    }
 }
 

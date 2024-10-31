@@ -1,5 +1,4 @@
-package oop;
-import java.util.Scanner;
+package Oop.Calculator;
 
 public class Calculator {
     private double number1;

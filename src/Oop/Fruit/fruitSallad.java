@@ -1,4 +1,4 @@
-package oop;
+package Oop.Fruit;
 
 public class fruitSallad {
     public static void main(String[] args) {

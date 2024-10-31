@@ -39,6 +39,7 @@ abstract class Characters {
     public boolean isAlive() {
         return this.hp > 0;
     }
+
     // Subklass för spelarkaraktärer
     class PlayerCharater extends Characters {
 
@@ -73,7 +74,6 @@ abstract class Characters {
         public void move() {
             posX += (Math.random() < 0.5) ? -1 : 1
             posY += (Math.random() < 0.5) ? -1 : 1
-
         }
 
         // Zombie attackerar spelare

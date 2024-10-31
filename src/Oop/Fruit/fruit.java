@@ -1,4 +1,4 @@
-package oop;
+package Oop.Fruit;
 
 public class fruit {
     private String name;
