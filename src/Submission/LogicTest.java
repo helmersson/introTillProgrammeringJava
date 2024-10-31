@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LogicTest {
 
+    //  Test för antal bokstäver
     @Test
     public void testCharCount() {
         Logic logicTest = new Logic();
@@ -17,6 +18,7 @@ class LogicTest {
         assertEquals(expected, actual);
     }
 
+    //  Test för antal rader
     @Test
     public void testLineCount() {
         Logic logicTest = new Logic();
@@ -30,6 +32,7 @@ class LogicTest {
         assertEquals(expected, actual);
     }
 
+    //  Test för antal ord
     @Test
     public void testWordCount() {
         Logic logicTest = new Logic();
@@ -43,6 +46,7 @@ class LogicTest {
         assertEquals(expected, actual);
     }
 
+    //  Test för Längsta ord
     @Test
     public void testLongestWord() {
         Logic logicTest = new Logic();
@@ -56,6 +60,7 @@ class LogicTest {
         assertEquals(expected, actual);
     }
 
+    //  Testar så att stop loopen funkar vid TRUE
     @Test
     public void testStopTrue() {
         Logic logicTest = new Logic();
@@ -66,6 +71,7 @@ class LogicTest {
         }
     }
 
+    //  Testar så att stop loopen funkar vid FALSE
     @Test
     public void testStopFalse() {
         Logic logicTest = new Logic();

@@ -10,9 +10,11 @@ public class Logic {
     //  Uppdaterar variablarna efter varje input
         public boolean addLine(String line) {
 
+            // Avsluta om användaren skriver "stop"
             if (line.equalsIgnoreCase("stop")) {
-                return true; // Avsluta om användaren skriver "stop"
+                return true;
             }
+
             //  Ökar linecount för varje gång addLine körs
             //  charCount = längden på line
             lineCount++;
@@ -32,6 +34,7 @@ public class Logic {
             }
             return false;
         }
+
         //  Printar ut svaren i konsolen
         public void printResult(){
             System.out.println("Antal rader:" + lineCount);
