@@ -25,10 +25,14 @@ public class Logic {
             String [] words = line.split("\\s+");
             wordCount += words.length;
 
-            //  Om det nya order är längre än det sparade längsta ordet
-            //  så uppdateras längsta ordet till senaste ordet
+
+            //  : används istället för en foreach loop.
+            //  Första var är en temporär var som bara används i loopen.
+            //  Så loopen går igenom varje word i words arrayen och kollar utifall
+            //  Det nya ordet är längre än det sparade längsta ordet
+            //  Om detta är fallet så uppdateras längsta ordet
             for (String word : words) {
-                if (word.length () > longestWord.length()) {
+                if (word.length() > longestWord.length()) {
                     longestWord = word;
                 }
             }
