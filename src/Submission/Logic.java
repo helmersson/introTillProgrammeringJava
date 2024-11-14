@@ -21,6 +21,7 @@ public class Logic {
             charCount+= line.length();
 
             //  words = array som sparar varje inviduellt ord i en rad
+            //  line.split tar bort mellanrum med följande regex
             // wordCount = antalet ord. words.length går igenom arrayen
             String [] words = line.split("\\s+");
             wordCount += words.length;
