@@ -13,8 +13,7 @@ public class InputOutput {
         Scanner scanner = new Scanner(System.in);
 
 
-        //  True användds för att köra loopen oöndligt
-        //  tills du går in i if
+        //  True används för att köra loopen oöndligt
         while (true) {
             System.out.print("Skriv in din text här. Skriv 'stop' för att avbryta.");
             String input = scanner.nextLine();
