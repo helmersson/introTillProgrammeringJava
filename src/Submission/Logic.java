@@ -7,6 +7,10 @@ public class Logic {
     private int  wordCount = 0;
     private String longestWord = "";
 
+    //  Jag har valt att inte använda någon konstruktor då
+    //  alla attribut vi använder kan vara standard initierade
+    //  vilket innebär att alla ints är 0 och alla string är tomma
+
     //  Uppdaterar variablarna efter varje input
         public boolean addLine(String line) {
 
