@@ -6,18 +6,21 @@ public class InputOutput {
     //  Skapar ett object för logic klassen
     private Logic logic = new Logic();
 
-    //  Input från användare
+
     public void inputProcess(){
 
-        //  Scanner
+        //  Scanner init
         Scanner scanner = new Scanner(System.in);
 
-        //  Loop som körs tills att ordet stop skrivs
+
+        //  True användds för att köra loopen oöndligt
+        //  tills du går in i if
         while (true) {
             System.out.print("Skriv in din text här. Skriv 'stop' för att avbryta.");
             String input = scanner.nextLine();
 
-            // Skicka texten till logik-klassen för bearbetning
+            //  Om addLine är True avslutas loopen
+            //  Om addLine är False fortsätter den
             if (logic.addLine(input)) {
                 break;
             }
